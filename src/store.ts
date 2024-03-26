@@ -1,9 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit'
-import counterReducer from './slices/counter/counterSlice'
+import { gifs } from './store/slices/loadDataSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer
+    gifs
   },
 })
 
